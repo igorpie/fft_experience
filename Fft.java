@@ -1,12 +1,10 @@
 import helper.Complex;
 import helper.FastFourierTransform;
+import helper.FastFourierTransformList;
 
 //import static helper.Complex.conj;
 import java.util.ArrayList;
 import java.util.List;
-
-import static helper.FastFourierTransform.fft;
-import static helper.FastFourierTransform.fftList;
 
 public class Fft {
     public static void main(String[] args) {
@@ -22,13 +20,13 @@ public class Fft {
         FastFourierTransform.fft(cinput);
         FastFourierTransform.print(cinput);
 
-        FastFourierTransform.fftList(inArray);
-        FastFourierTransform.printList(inArray);
+        FastFourierTransformList.fftList(inArray);
+        FastFourierTransformList.printList(inArray);
 
         FastFourierTransform.ifft(cinput);
         FastFourierTransform.print(cinput);
 
-        FastFourierTransform.ifftList(inArray);
-        FastFourierTransform.printList(inArray);
+        FastFourierTransformList.ifftList(inArray);
+        FastFourierTransformList.printList(inArray);
     }
 }
